@@ -1,27 +1,35 @@
-# php-
+# PHP
 
-Week 1: PHP Programming Practice
+# Week 1: PHP Programming Practice
 
-This folder contains my Week 1 PHP practice work and screenshots from the Web Application Development - PHP & MySQL course.
+This folder contains my Week 1 PHP practice work and screenshots from the **Web Application Development - PHP & MySQL** course.
+
 The exercises in this week focus on PHP syntax, output statements, variables, constants, and control structures.
 
-1. PHP Output with Echo and Print
-Screenshot Name
-PHP_Output_Echo_Print.png
-Description
-This exercise demonstrates different ways of displaying information in PHP using echo and print.
+---
+
+# 1. PHP Output with Echo and Print
+
+## Screenshot Name
+
+`PHP_Output_Echo_Print.png`
+
+## Description
+
+This exercise demonstrates different ways of displaying information in PHP using `echo` and `print`.
+
 It also demonstrates how PHP can display HTML elements.
-Concepts Covered
 
-Using echo to display text.
+### Concepts Covered
 
-Using print to display text.
+* Using `echo` to display text.
+* Using `print` to display text.
+* Displaying HTML elements with PHP.
+* Using different types of output statements.
 
-Displaying HTML elements with PHP.
+### Code Example
 
-Using different types of output statements.
-
-Code Example
+```php
 <?php
 
 echo "Good morning!";
@@ -31,65 +39,103 @@ print "Learning PHP is interesting.";
 echo '<h2>Welcome to my PHP practice</h2>';
 
 ?>
-Output
+```
+
+### Output
+
+```text
 Good morning!
+
 Learning PHP is interesting.
+
 Welcome to my PHP practice
-Screenshot
-PHP Output Echo Print
+```
 
-2. PHP Variables and Constants
-Screenshot Name
-PHP_Variables_Constants.png
-Description
+## Screenshot
+
+`PHP Output Echo Print`
+
+---
+
+# 2. PHP Variables and Constants
+
+## Screenshot Name
+
+`PHP_Variables_Constants.png`
+
+## Description
+
 This exercise demonstrates how PHP variables and constants can be used to store and display information.
+
 Variables can contain values that may change, while constants store values that remain fixed.
-Concepts Covered
 
-Creating variables using the $ symbol.
+### Concepts Covered
 
-Assigning values to variables.
+* Creating variables using the `$` symbol.
+* Assigning values to variables.
+* Displaying variable values.
+* Creating constants using `define()`.
+* Displaying constant values.
 
-Displaying variable values.
+### Code Example
 
-Creating constants using define().
-
-Displaying constant values.
-
-Code Example
+```php
 <?php
 
 // Variables
+
 $name = "Safiya Suleiman";
 $age = 21;
 
 echo "Student Name: $name";
 echo "Student Age: ", $age;
- 
+
 // CONSTANT
 
-    define("UNiversity_Name", "Jamhuuriya UNiversity");
+define("UNiversity_Name", "Jamhuuriya UNiversity");
 
-    echo "UNiversity" . UNiversity_NAME . "<br /><br />";
+echo "UNiversity" . UNiversity_NAME . "<br /><br />";
 
 ?>
-Output
+```
+
+### Output
+
+```text
 Student Name: Safiya Suleiman
+
 Student Age: 21
+
 UNiversity: Jamhuuriya UNiversity
-Screenshot
-PHP Variables and Constants
+```
 
-3. PHP Conditional Statements
-Screenshot Name
-PHP_Control_Structures.png
-Description
+## Screenshot
+
+`PHP Variables and Constants`
+
+---
+
+# 3. PHP Conditional Statements
+
+## Screenshot Name
+
+`PHP_Control_Structures.png`
+
+## Description
+
 This exercise demonstrates how PHP conditional statements are used to make decisions based on different conditions.
-The main conditional structures practiced are if, elseif, else, and switch.
 
-If / Elseif / Else Statement
-The if, elseif, and else statements allow a program to check conditions and execute different code depending on the result.
-Code Example
+The main conditional structures practiced are `if`, `elseif`, `else`, and `switch`.
+
+---
+
+## If / Elseif / Else Statement
+
+The `if`, `elseif`, and `else` statements allow a program to check conditions and execute different code depending on the result.
+
+### Code Example
+
+```php
 <?php
 
 $score = 78;
@@ -109,21 +155,43 @@ if ($score >= 90) {
 }
 
 ?>
-Explanation
+```
 
-The program checks the value stored in $score.
+### Explanation
+
+The program checks the value stored in `$score`.
+
 If the score is 90 or higher, it displays:
-Excellent result.
-If the first condition is false but the score is 70 or higher, the elseif statement is executed.
-Otherwise, the else statement is executed.
-For example, when:
-$score = 78;
-the output will be:
-Good result.
 
-Switch Statement
-The switch statement can be used when a program needs to compare one value with several possible cases.
-Code Example
+```text
+Excellent result.
+```
+
+If the first condition is false but the score is 70 or higher, the `elseif` statement is executed.
+
+Otherwise, the `else` statement is executed.
+
+For example, when:
+
+```php
+$score = 78;
+```
+
+the output will be:
+
+```text
+Good result.
+```
+
+---
+
+## Switch Statement
+
+The `switch` statement can be used when a program needs to compare one value with several possible cases.
+
+### Code Example
+
+```php
 <?php
 
 $day = "Monday";
@@ -155,31 +223,58 @@ switch ($day) {
 }
 
 ?>
-Explanation
+```
 
-The program checks the value stored in $day.
+### Explanation
+
+The program checks the value stored in `$day`.
+
 For:
-$day = "Monday";
-the matching case is:
-case "Monday":
-Therefore, the program displays:
-Start of the week.
-The break statement stops the switch after the matching case has been executed.
-The default section runs when the value does not match any of the listed cases.
-Screenshot
-PHP Control Structures
 
-4. Complete Week 1 Practice
+```php
+$day = "Monday";
+```
+
+the matching case is:
+
+```php
+case "Monday":
+```
+
+Therefore, the program displays:
+
+```text
+Start of the week.
+```
+
+The `break` statement stops the switch after the matching case has been executed.
+
+The `default` section runs when the value does not match any of the listed cases.
+
+## Screenshot
+
+`PHP Control Structures`
+
+---
+
+# 4. Complete Week 1 Practice
 
 The following code combines the PHP concepts practiced during Week 1.
-Complete Code
+
+### Complete Code
+
+```php
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>PHP Week 1 Practice</title>
+
 </head>
 
 <body>
@@ -271,35 +366,38 @@ Complete Code
 </body>
 
 </html>
+```
 
-5. What I Practiced
-   
+---
+
+# 5. What I Practiced
+
 During this week's practical work, I practiced:
 
-Displaying text using echo.
+* Displaying text using `echo`.
+* Displaying text using `print`.
+* Creating and using PHP variables.
+* Creating constants using `define()`.
+* Using `if`, `elseif`, and `else`.
+* Using `switch`, `case`, and `default`.
+* Using `break` in a switch statement.
+* Combining PHP code with HTML.
 
-Displaying text using print.
+---
 
-Creating and using PHP variables.
+# 6. Learning Outcome
 
-Creating constants using define().
-
-Using if, elseif, and else.
-
-Using switch, case, and default.
-
-Using break in a switch statement.
-
-Combining PHP code with HTML.
-
-6. Learning Outcome
-   
 After completing these exercises, I gained a better understanding of basic PHP programming concepts.
+
 I learned how to display information, store data using variables and constants, and use conditional statements to make decisions in a PHP program.
 
-8. Files and Screenshots
+---
+
+# 8. Files and Screenshots
 
 The Week 1 folder contains the following practical files and screenshots:
+
+```text
 Week1/
 │
 ├── php_output.php
@@ -312,16 +410,21 @@ Week1/
 │   └── php_control_structure.png
 │
 └── README.md
-10. Progress
+```
 
-Topic	Status
-PHP Output	        ✅ Completed
-Echo and Print      ✅ Completed
-Variables        	  ✅ Completed
-Constants	          ✅ Completed
-If / Elseif / Else  ✅ Completed
-Switch Statement	  ✅ Completed
+---
 
- Week 1 Completed
+# 10. Progress
 
+| Topic              | Status      |
+| ------------------ | ----------- |
+| PHP Output         | ✅ Completed |
+| Echo and Print     | ✅ Completed |
+| Variables          | ✅ Completed |
+| Constants          | ✅ Completed |
+| If / Elseif / Else | ✅ Completed |
+| Switch Statement   | ✅ Completed |
 
+---
+
+# Week 1 Completed
